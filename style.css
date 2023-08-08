@@ -1,0 +1,66 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+.wrapper{
+    border: 1px solid red;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+img{
+    border: 1px solid black;
+    /* transform: translateY(200px); */
+    /* transform: translate(100px, 100px); */
+    /* transform: scaleY(2); */
+    /* transform: scale(x,y); */
+    /* transform: rotateX(110deg); */
+    /* transform: rotateY(110deg); */
+    /* transform: rotateZ(90deg); */
+    /* transform: rotateZ(10deg) translateY(200px)  scaleX(1.5); */
+}
+.circle{
+    width:100px;
+    background-color: brown;
+    padding: 50px 0;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: 1s; */
+    /* transition: background 1s; */
+    transition: 1s;
+}
+.circle:hover{
+    background: #55f036;
+    transform: rotate(360deg);
+}
+.circle1{
+    width:100px;
+    background-color: brown;
+    padding: 50px 0;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: 1s; */
+    /* transition: background 1s; */
+    transition: transform 1s 2s ease;
+}
+.circle1:hover{
+    background: #55f036;
+    transform: rotate(360deg);
+}
+.circle2{
+    width:100px;
+    background-color: brown;
+    padding: 50px 0;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: 1s; */
+    /* transition: background 1s; */
+    transition: background 1s, transform 1s 2s ease;
+}
+.circle2:hover{
+    background: #55f036;
+    transform: rotate(360deg);
+}
