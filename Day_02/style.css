@@ -12,6 +12,7 @@
     height: 20vh;
 }
 .road{
+    position: relative;
     height: 50vh;
     background-color: #242323;
     display: flex;
@@ -31,13 +32,46 @@
     animation-fill-mode: forwards; 
 
     /* To do delay animation */
-    animation-delay: 2s;
+    animation-delay: 0.5s;
 
     /* To repeat animation 'infinite' or 'count'*/
-    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
+
+    /* change direction */
+    animation-direction: normal;
+
+    /* Animation timing function */
+    animation-timing-function:cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+.lungo{
+    position: absolute;
+    top: -20px;
+    width: 100px;
+    animation: drive 5s linear infinite normal,
+               jump 0.3s 1.2s ease;
+}
+.cloud{
+    position: absolute;
+    width: 150px;
+
+    /* Amimation Shorthand method */
+    animation: wind 50s linear infinite reverse;
 }
 
+/* Keyframe */
 @keyframes drive{
-    from{transform: translateX(100px);}
-    to{transform: translateX(500px);}
+    from{transform: translateX(0px);}
+    to{transform: translateX(700px);}
+}
+
+@keyframes wind{
+    from{left:-200px}
+    to{left:550px}
+}
+
+@keyframes jump{
+    0%{top:-10%}
+    50%{top:-50%}
+    100%{top:-40%}
 }
