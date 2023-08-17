@@ -26,9 +26,18 @@
     width: 100px;
     animation-name: drive;
     animation-duration: 3s;
+
+    /* forwards, backwords, both */
+    animation-fill-mode: forwards; 
+
+    /* To do delay animation */
+    animation-delay: 2s;
+
+    /* To repeat animation 'infinite' or 'count'*/
+    animation-iteration-count: 3;
 }
 
 @keyframes drive{
-    from{transform: translateX(0);}
+    from{transform: translateX(100px);}
     to{transform: translateX(500px);}
 }
